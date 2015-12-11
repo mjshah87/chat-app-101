@@ -1,0 +1,48 @@
+html, body {
+    height: 100%;
+}
+#username {
+    width: 20em;
+}
+
+.error{
+    color: red;
+}
+
+.pm{
+    color: blue;
+    font-style: italic;
+}
+.modal-backdrop {
+  z-index: -1;
+}
+
+#chat-container {
+    overflow-y: auto; 
+    border: 1px;
+}
+
+#chat {
+    overflow-y: auto;
+}
+
+#textarea{
+    position:fixed;
+    bottom: 0px !important;
+    padding: 10px;
+    opacity: 1;
+    background-color: #808080;
+}
+
+#send-message {
+    opacity: 1;
+}
+
+.msg {
+    float: left;
+    clear: both;
+}
+
+#new-message{
+    width: 100%;
+}
