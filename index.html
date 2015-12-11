@@ -1,0 +1,81 @@
+<html>
+	<head>
+		<title>Demo chat app</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css"/>
+		<link rel="stylesheet" href="/css/style.css" type="text/css"/>
+	</head>
+	<body>
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">Weebly Chat</a>
+				</div>
+				<div>
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Home</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container" id="chat-container">
+			<div class="row" id="row123">
+				<div class="col-xs-8" id="main-chat-window">
+					<h2>Chat window</h2>
+					<div class="row" id="chat">
+					</div>
+				</div>
+				<div class="col-xs-4" id="user-col">
+					<h5>Users</h5>
+					<div class="row" id = "users"></div>
+					<h5> Rooms </h5>
+					<div class="row" id = "rooms"></div>
+					<ul>
+						<div id = "rchat"><a href="#">chat</a></div>
+					</ul>
+					<ul>
+						<div id = "rhottub"><a href="#">hottub</a></div>
+					</ul>
+
+				</div>
+			</div>
+			<div class="row" id="textarea">
+				<!--<form id="send-message"> Temporary fix to modal load on submit.--> 
+					<input placeholder="Type your message here..." size="35" id="message"></input>
+					<button type="button" id="send" class="btn btn-default">Send message</button>
+				<!--</form> -->
+			</div>
+		</div> <!-- div chat-container -->
+
+		<!-- Modal -->
+		<div id="myModal" class="modal" role="dialog" data-show="true">
+			<div class="modal-dialog">
+
+				<!-- Modal content-->
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" id="close-modal" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title" id="modal-title">Welcome to Weebly chat</h4>
+					</div>
+					<div class="modal-body">
+						<h1>Enter a username!</h1>
+						<span id="username-error"></span>
+						<form id="enter-username">
+							<input type="text" id="username"></input><br/>
+							<label>
+							</div>
+							<div class="modal-footer">
+								<button type="button" id="select-username" class="btn btn-default" data-dismiss="modal">Go</button>
+							</div>
+						</div>
+
+					</div>
+				</div> <!-- div modal -->
+
+			<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+			<script src="/socket.io/socket.io.js"></script>
+			<!-- Latest compiled and minified JavaScript -->
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+			<!-- main.js-->
+			<script src="/js/main.js"></script>
+	</body>
+</html>
